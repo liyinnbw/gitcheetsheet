@@ -50,6 +50,20 @@ git push origin -u new-branch-name
 git push origin --delete old-branch-name
 ```
 
+## Merge
+Merge a remote branch to local branch
+```
+git fetch
+git checkout local-branch-name
+git merge origin/remote-branch-name
+```
+
+Merge a local branch to remote branch
+```
+git fetch
+git checkout remote-branch-name
+git merge local-branch-name
+```
 
 ## Resolve Merge Conflicts
 Accept a local file in full
@@ -58,10 +72,16 @@ git checkout --ours PATH/FILE
 ```
 
 Accept a remote file in full
-> git checkout --theirs PATH/FILE
+```
+git checkout --theirs PATH/FILE
+```
 
 Accept all local files in full
-> grep -lr '<<<<<<<' . | xargs git checkout --ours
+```
+grep -lr '<<<<<<<' . | xargs git checkout --ours
+```
 
 Accept all remote files in full
-> grep -lr '<<<<<<<' . | xargs git checkout --theirs
+```
+grep -lr '<<<<<<<' . | xargs git checkout --theirs
+```
