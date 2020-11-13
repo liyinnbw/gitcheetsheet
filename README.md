@@ -56,6 +56,13 @@ Merge a remote branch to local branch
 git fetch
 git checkout local-branch-name
 git merge origin/remote-branch-name
+
+or 
+
+git checkout remote-branch-name
+git pull
+git checkout local-branch-name
+git merge remote-branch-name
 ```
 
 Merge a local branch to remote branch
