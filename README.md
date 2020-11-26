@@ -50,6 +50,11 @@ git push origin -u new-branch-name
 git push origin --delete old-branch-name
 ```
 
+Delete a local branch
+```
+git branch -d local-branch-name
+```
+
 ## Merge
 Merge a remote branch to local branch
 ```
