@@ -6,6 +6,22 @@ Add & commit
 git commit -am "message"
 ```
 
+Rever last remote commit (this will create a new commit, good for team work)
+```
+git checkout remote-branch
+git pull
+git revert HEAD
+git push
+```
+
+Rever to any remote commit (this will create a new commit, good for team work)
+```
+git checkout remote-branch
+git pull
+git revert <commit hash>
+git push
+```
+
 ## Branch Mangement
 List local branches
 ```
