@@ -38,6 +38,11 @@ List local+remote branches
 git branch -a
 ```
 
+List local branch with time
+```
+git for-each-ref --sort=committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'
+```
+
 Create & checkout local branch
 ```
 git checkout -b new-branch-name
