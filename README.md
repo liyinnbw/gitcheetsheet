@@ -19,11 +19,12 @@ git revert HEAD
 git push
 ```
 
-Rever to any remote commit (this will create a new commit, good for team work)
+Revert last N commits (this will create a new commit, good for team work)
 ```
 git checkout remote-branch
 git pull
-git revert <commit hash>
+git revert --no-commit HEAD~N..
+git commit -am "message"
 git push
 ```
 
