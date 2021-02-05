@@ -118,3 +118,24 @@ Accept all remote files in full
 ```
 grep -lr '<<<<<<<' . | xargs git checkout --theirs
 ```
+
+## Multiple Remotes
+Add another remote
+```
+git remote add <remote-name> <url>
+```
+
+View all remotes
+```
+git remote -v
+```
+
+Pull from a remote branch
+```
+git pull <remote-name> <branch-name>
+```
+
+Push to a remote branch
+```
+git push <remote-name> <branch-name>
+```
