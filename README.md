@@ -6,6 +6,11 @@ Add & commit
 git commit -am "message"
 ```
 
+Pretty print commit history of current branch (hash - author, time : message)
+```
+git log --pretty=format:"%h - %an, %ar : %s"
+```
+
 Rever last remote commit (this will create a new commit, good for team work)
 ```
 git checkout remote-branch
