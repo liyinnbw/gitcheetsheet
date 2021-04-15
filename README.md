@@ -145,3 +145,7 @@ Push to a remote branch
 ```
 git push <remote-name> <branch-name>
 ```
+
+### Good Readings:
+
+https://missing.csail.mit.edu/2020/version-control/
